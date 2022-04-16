@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  background-image: linear-gradient(#dac3ce 0%,#f9f5f8 57%);
+  font-family: 'Rubik', sans-serif;
+}
+header {
+  background-color: whitesmoke;
+  padding: 15px;
+}
+header ul {
+  float: right;
+  color: black;
+}
+header li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+header li:hover {
+  background-color:rgba(43, 25, 25, 0.25);
+}
+header p {
+  display: inline-block;
+}
+.heroImg {
+  display: grid;
+  width: 100%;
+  height: 430px;
+  padding: 100px 15px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "hello memoji"
+  "ux memoji"
+  "passion memoji"
+  "see memoji";
+}
+.content {
+  text-align: left;
+  margin: 209px 20px 61px 112px;
+}
+.memoji {
+  grid-area: memoji;
+  width: 421px;
+  height: 422px;
+  margin: 112px 197px 203px 48px;
+}
+.hello {
+  grid-area: hello;
+}
+.ux {
+  grid-area: ux;
+}
+.passion{
+  grid-area: passion;
+}
+.see {
+  padding: 15px;
+  width: 269px;
+  height: 86px;
+  background-color: #513a2d;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  font-size: 30px;
+  grid-area: see;
+  margin: 61px 117px 206px 114px;
+}
+.learn {
+  color: white;
+  background-color: #513a2d;
+  border: none;
+  width: 200px;
+  height: 60px;
+  font-size: 18px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  grid-area: learn;
+}
+.resume {
+  color: white;
+  background-color: #513a2d;
+  border: none;
+  width: 200px;
+  height: 60px;
+  font-size: 18px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  grid-area: resume;
+}
+.aboutMe {
+  display: grid;
+  width: 70%;
+  height: 460px;
+  margin: 170px 155px 55px 114px;
+  padding: 39px 115px 38px 117px;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border: solid 1px #d1ccc9;
+  background-color: #f6f6f6;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "profile aboutme"
+  "profile designer"
+  "profile learn"
+  ;
+}
+#profile {
+  grid-area: profile;
+}
+#aboutme {
+  grid-area: aboutme;
+}
+#designer{
+  grid-area: designer;
+}
+.skills {
+  display: grid;
+  width: 70%;
+  height: 460px;
+  margin: 170px 155px 55px 114px;
+  padding: 39px 115px 38px 117px;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border: solid 1px #d1ccc9;
+  background-color: #f6f6f6;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "skillscontent imgSkills"
+  "skillscontent imgSkills"
+  "skillscontent imgSkills"
+  "resume imgSkills";
+}
+#imgSkills {
+  grid-area: imgSkills;
+}
+.skillscontent {
+  grid-area: skillscontent;
+  text-align: right;
+}
+footer {
+  background-color: white;
+  padding: 5px;
+  color: white;
+}
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+.caseStudies {
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "casetitle casetitle"
+  "disabilitysa mycloset"
+  "disabilitysa mycloset";
+}
+#casetitle {
+  grid-area: casetitle;
+  text-align: center;
+}
+#disabilitysa {
+  grid-area: disabilitysa;
+  text-align: center;
+}
+#mycloset {
+  grid-area: mycloset;
+  text-align: center;
+}
+.preloader {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#dac3ce 0%,#f9f5f8 57%);
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "laptop"
+  "loading";
+  justify-content: center;
+  transition: all 5s ease-out;
+}
+.laptop {
+  grid-area: laptop;
+}
+.loading {
+  grid-area: loading;
+  width: 173px;
+  height: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 1px 124px 20px;
+  padding: 1px;
+  border-radius: 100px;
+  background-image: linear-gradient(to right, #aa856b 0%, rgba(170, 133, 107, 0.46) 98%);
+}
+.img-fluid {
+  display: inline-block;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  right: 60px;
+
+}
+#accordion {
+  padding: 20px; 
+}
+.affinity {
+  width: 100px;
+  height: 100px;
+}
+.problem {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 30px;
+}
+.process {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 30px;
+}
+.disabilitysa {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 30px;
+}
